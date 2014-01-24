@@ -12,7 +12,7 @@
     </target>
 
     <target name="runTest" depends="compile">
-        <junit>
+        <junit haltonfailure="yes">
             <classpath>
                 <pathelement location="build/classes" />
                 <pathelement location="build/testClasses" />

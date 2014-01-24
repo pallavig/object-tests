@@ -31,17 +31,6 @@ public class HashCodeTest {
 
     //Wrong Implementation
     @Test
-    public void testHashCodeDoesNotProvideSameCodeForTwoObjectHavingSameData() throws Exception {
-        WrongPerson pallavi1 = new WrongPerson("pallavi",97);
-        WrongPerson pallavi2 = new WrongPerson("pallavi",97);
-
-        int hash1 = pallavi1.hashCode();
-        int hash2 = pallavi2.hashCode();
-
-        assertFalse(hash1 == hash2);
-    }
-
-    @Test
     public void testHashCodeGivesDifferentValueOnSameReference() throws Exception {
         WrongPerson pallavi = new WrongPerson("pallavi",97);
 
